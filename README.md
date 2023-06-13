@@ -3,6 +3,13 @@
 
 These are templates to fill out Issues or Pull Requests. This repository will contain all github related code. It is meant to be included as a submodule under `.github`.
 
+**features**
+
+- [ ] Collection of issue and pr templates that can be imported as a submodule anywhere
+- [ ] Independent `.github` to maintain and evolve this repository
+- [ ] Update script that can be run to bring submodules to current release
+- [ ] Bash scripts to generate new templates via [interactive] cli
+
 ## Usage
 
 - Installing
