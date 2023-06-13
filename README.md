@@ -16,7 +16,6 @@ These are templates to fill out Issues or Pull Requests. This repository will co
 ```sh
 # cd root-of-repo-needing-templates
 git submodule add https://github.com/shil-me/gh-templates.git .github
-git add .github
 git commit -m "add \`.github\` submodule from https://github.com/shil-me/gh-templates.git"
 git push
 # note, for the templates to work, they must be included on the default branch of the repository #
@@ -26,7 +25,6 @@ git push
 # cd root-of-repo-using-templates
 cd .github
 git pull origin master
-git add .
 git commit -m "update \`.github\` submodule"
 git push
 ```
