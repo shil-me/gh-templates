@@ -5,7 +5,7 @@
 name: Feature Request
 description: 
 title: '[Feature]: '
-labels: ['enhancement']
+labels: ['enhancement', 'question']
 assignees: []
 body:
   - type: markdown

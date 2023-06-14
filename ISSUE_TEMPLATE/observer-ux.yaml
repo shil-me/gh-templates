@@ -1,7 +1,7 @@
 name: Observer UX
 description: Use this template to open an issue about some form of user experience. This could be a bug, a feature request, or a general observation.
 title: '[Observer UX]: '
-labels: ['ux-improve', 'enhancement']
+labels: ['ux-plus', 'enhancement']
 assignees: []
 body: # * = required
 

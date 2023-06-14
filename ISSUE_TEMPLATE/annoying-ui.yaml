@@ -5,7 +5,7 @@
 name: Better UI
 description: This is an example template. Copy this file to create your own templates. Do not use this template to open your issue.
 title: '[Better UI]: '
-labels: ['ui-fix']
+labels: ['ui-fix', 'enhancement']
 assignees: []
 body:
   - type: markdown
