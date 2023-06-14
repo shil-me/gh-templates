@@ -1,7 +1,3 @@
-# template reference: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
-# body reference https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
-# See detailed reference below
-
 name: [EXAMPLE] Issue Template
 description: This is an example template. Copy this file to create your own templates. Do not use this template to open your issue.
 title: '[Example]: '
@@ -56,11 +52,14 @@ body:
     validations:
       required: true
 
-
-## Explanation of options ##
+## Reference / Documentation ##
 # make sure to delete this section before using this template reduce file size
 
+# template reference: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+# body reference https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+
 # ^ - required
+
 # ^name: A name for the issue form template. Must be unique from all other templates, including Markdown templates.
 # ^description: A description for the issue form template, which appears in the template chooser interface.
 # assignees: People who will be automatically assigned to issues created with this template.
