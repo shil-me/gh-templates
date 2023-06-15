@@ -1,12 +1,8 @@
-# template reference: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
-# body reference https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
-# See detailed reference below
-
-name: Feature Request
-description: 
+name: 'Feature Request'
+description: 'Use this template to request a new feature. Or to start a discussion around one.'
 title: '[Feature]: '
 labels: ['enhancement', 'question']
-assignees: []
+assignees: ['']
 body:
   - type: markdown
     attributes:
@@ -15,42 +11,45 @@ body:
   - type: textarea
     id: the-what
     attributes:
-      label: Description
-      description: Describe this feature. _What_ do you envision?
-      placeholder: pls sir, reveal your secrets!
+      label: 'Description'
+      description: 'Describe this feature. _What_ do you envision?'
+      placeholder: 'pls sir, reveal your secrets!'
       render: txt
     validations:
       required: true
   - type: textarea
     id: the-why
     attributes:
-      label: Journey to this point
-      description: Describe how you got to this point. _Why_ do you want this feature?
-      placeholder: pls sir, let us travel the path with you!
+      label: 'Journey to this point'
+      description: |
+        Describe how you got to this point. _Why_ do you want this feature?
+      placeholder: 'pls sir, let us travel the path with you!'
       render: txt
     validations:
       required: true
   - type: textarea
     id: support
     attributes:
-      label: Supporting materials
-      description: Attach any supporting materials here. Screenshots, links, etc.
-      placeholder: pls sir, let us see what you see!
+      label: 'Supporting materials'
+      description: |
+        Attach any supporting materials here. Screenshots, links, etc.
+      placeholder: 'pls sir, let us see what you see!'
     validations:
       required: true
   - type: textarea
     id: the-how
     attributes:
-      label: Considerations
-      description: How do you envision this feature working? _How_ do you think it should be implemented?
-      placeholder: pls sir, help us!
+      label: 'Considerations'
+      description: |
+        How do you envision this feature working? _How_ do you think it should be implemented?
+      placeholder: 'pls sir, help us!'
     validations:
       required: true
-- type: dropdown
+  - type: dropdown
     id: urgency
     attributes:
       label: Urgency
-      description: How critical would you think this feature is? (1 = most urgent)
+      description: 'How critical would you think this feature is? (1 = most urgent)'
       options:
         - 0 (needed yesterday)
         - 1 (ASAP)
@@ -64,5 +63,8 @@ body:
     id: miscellaneous
     attributes:
       label: Thoughts
-      description: Use this area for any lingering thoughts or comments.
-      placeholder: whatcha thinkin'?
+      description: 'Use this area for any lingering thoughts or comments.'
+      placeholder: 'whatcha thinkin bru?'
+
+## Created: 2023-06-13 @thisispalash
+## Updated: 2023-06-15 @thisispalash
