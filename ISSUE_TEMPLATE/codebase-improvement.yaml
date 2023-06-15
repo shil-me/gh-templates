@@ -2,7 +2,7 @@ name: Codebase Improvement
 description: Use this template to open an issue about the codebase; this could be optimization or dev experience or devops.
 title: '[Codebase]: '
 labels: ['codebase', 'enhancement']
-assignees: ['@henry1jin']
+assignees: ['henry1jin']
 body: # * = required
 
   # [checkboxes] issue type *
@@ -10,11 +10,14 @@ body: # * = required
     id: root-reasoning
     attributes:
       label: Specifically, what in the codebase is being improved?
-      description: This issue is for codebase stuff. This will likely be highly technical. Select all that apply. If none apply, maybe some other issue template more appropriate?
+      description: This issue is for codebase stuff. This will likely be highly technical. Select all that apply. If none apply,
       options:
-        - optimization; addressing this would improve overall performance
-        - experience; this is solely to improve developer experience when building
-        - devops; doing this can improve the modularity and _devops_ of the codebase
+        - label: optimization; addressing this would improve overall performance
+          required: false
+        - label: experience; this is solely to improve developer experience when building
+          required: false
+        - label: devops; doing this can improve the modularity and _devops_ of the codebase maybe some other issue template more appropriate?
+          required: false
     validations:
       required: true
       
@@ -84,4 +87,4 @@ body: # * = required
       placeholder: whatcha thinkin'?
 
 ## Created: 2023-06-13 @thisispalash
-## Updated: 
+## Updated: 2023-06-15 @thisispalash
