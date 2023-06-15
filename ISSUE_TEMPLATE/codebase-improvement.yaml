@@ -61,19 +61,19 @@ body: # * = required
   
   # [dropdown] Urgency (lower is more urgent) *
   - type: dropdown
-      id: urgency
-      attributes:
-        label: Urgency
-        description: How critical would you think this feature is? (1 = most urgent)
-        options:
-          - 0 (needed yesterday)
-          - 1 (ASAP)
-          - 2 (should do soon)
-          - 3 (would be nice to have)
-          - 4 (could be special)
-          - 5 (acually, is a moonshot)
-      validations:
-        required: true
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How critical would you think this feature is? (1 = most urgent)
+      options:
+        - 0 (needed yesterday)
+        - 1 (ASAP)
+        - 2 (should do soon)
+        - 3 (would be nice to have)
+        - 4 (could be special)
+        - 5 (acually, is a moonshot)
+    validations:
+      required: true
 
   # [textarea] miscellaneous / open section
   - type: textarea
