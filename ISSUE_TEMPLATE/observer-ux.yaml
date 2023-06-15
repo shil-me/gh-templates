@@ -12,10 +12,14 @@ body: # * = required
       label: Specifically, what in UX?
       description: This issue is for reporting UX things. Select all that apply. If none apply, maybe some other issue template more appropriate?
       options:
-        - breaking ux; causing user error or users to leave the site
-        - helpful ux; providing useful context to user
-        - delightful ux; eliciting a feeling of delight
-        - observer ux; something more general, noticed while general development and use of app
+        - label: breaking ux; causing user error or users to leave the site
+          required: false
+        - label: helpful ux; providing useful context to user
+          required: false
+        - label: delightful ux; eliciting a feeling of delight
+          required: false
+        - label: observer ux; something more general, noticed while general development and use of app
+          required: false
     validations:
       required: true
       
@@ -61,19 +65,19 @@ body: # * = required
   
   # [dropdown] Urgency (lower is more urgent) *
   - type: dropdown
-      id: urgency
-      attributes:
-        label: Urgency
-        description: How critical would you think this feature is? (1 = most urgent)
-        options:
-          - 0 (needed yesterday)
-          - 1 (ASAP)
-          - 2 (should do soon)
-          - 3 (would be nice to have)
-          - 4 (could be special)
-          - 5 (acually, is a moonshot)
-      validations:
-        required: true
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How critical would you think this feature is? (1 = most urgent)
+      options:
+        - 0 (needed yesterday)
+        - 1 (ASAP)
+        - 2 (should do soon)
+        - 3 (would be nice to have)
+        - 4 (could be special)
+        - 5 (acually, is a moonshot)
+    validations:
+      required: true
 
   # [textarea] miscellaneous / open section
   - type: textarea
@@ -84,4 +88,4 @@ body: # * = required
       placeholder: whatcha thinkin'?
 
 ## Created: 2023-06-13 @thisispalash
-## Updated: 
+## Updated: 2023-06-15 @thisispalash
