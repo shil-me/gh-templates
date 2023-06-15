@@ -61,19 +61,19 @@ body: # * = required
   
   # [dropdown] Urgency (lower is more urgent) *
   - type: dropdown
-      id: urgency
-      attributes:
-        label: Urgency
-        description: How critical would you think this feature is? (1 = most urgent)
-        options:
-          - 0 (the train has left)
-          - 1 (the train is leaving)
-          - 2 (the train is at the station)
-          - 3 (the train is arriving)
-          - 4 (the train is being built)
-          - 5 (the train should be built)
-      validations:
-        required: true
+    id: urgency
+    attributes:
+      label: Urgency
+      description: How critical would you think this feature is? (1 = most urgent)
+      options:
+        - 0 (the train has left)
+        - 1 (the train is leaving)
+        - 2 (the train is at the station)
+        - 3 (the train is arriving)
+        - 4 (the train is being built)
+        - 5 (the train should be built)
+    validations:
+      required: true
 
   # [textarea] miscellaneous / open section
   - type: textarea
@@ -84,4 +84,4 @@ body: # * = required
       placeholder: whatcha thinkin' bruv?
 
 ## Created: 2023-06-13 @thisispalash
-## Updated: 
+## Updated: 2023-06-15 @thisispalash
