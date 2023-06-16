@@ -6,7 +6,7 @@ description: 'Use this template to report any breaking UI or annouying UI issues
 title: '[Better UI]: '
 labels: ['ui-fix', 'enhancement']
 assignees: ['']
-body:
+body: # * = required
 
   # [markdown] information
   - type: markdown
@@ -14,7 +14,7 @@ body:
       value: |
         This issue is for reporting small UI things that annoy you as you build / develop / use the app. These should be addressed pretty soon, but they are not the focus of the current sprint. They may also be opinionated, in which case we might be able to modularize and decentralize the core issue.
   
-  # [textarea] the-what
+  # [textarea] the-what *
   - type: textarea
     id: the-what
     attributes:
@@ -25,7 +25,7 @@ body:
     validations:
       required: true
   
-  # [textarea] the-how
+  # [textarea] the-how *
   - type: textarea
     id: the-how
     attributes:
@@ -36,7 +36,7 @@ body:
     validations:
       required: true
   
-  # [textarea] the-why
+  # [textarea] the-why *
   - type: textarea
     id: the-why
     attributes:
@@ -47,7 +47,7 @@ body:
     validations:
       required: true
   
-  # [dropdown] severity
+  # [dropdown] severity *
   - type: dropdown
     id: severity
     attributes:
