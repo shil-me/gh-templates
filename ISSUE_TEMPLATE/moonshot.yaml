@@ -81,4 +81,4 @@ body: # * = required
     attributes:
       label: 'Thoughts'
       description: 'Use this area for any lingering thoughts or comments.'
-      placeholder: 'whatcha thinkin' bruv?'
+      placeholder: 'whatcha thinkin bruv?'
