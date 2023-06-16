@@ -1,0 +1,79 @@
+## Created: 2023-06-15 @thisispalash
+## Updated: 
+
+name: 'Sprint <number>'
+description: 'Use this template to create a new sprint and then manage it.'
+title: '[Sprint <number>]: '
+labels: ['sprint', 'release']
+assignees: ['henry1jin']
+body:
+  
+  # [markdown] information
+  - type: markdown
+    attributes:
+      value: |
+        Use this template at the start of a sprint to manage your sprint. The objective is to have better documentation, and better modularization of tasks to enable quick development.
+
+  # [textarea] issues
+  - type: textarea
+    id: issues
+    attributes:
+      label: 'Issues'
+      description: 'List the issues that you want to tackle in this sprint.'
+      placeholder: |
+        1. #1 (example issue)
+        2. #2 (example issue)
+        3. #3 (example issue)
+    validations:
+      required: true
+
+  # [textarea] prs
+  - type: textarea
+    id: prs
+    attributes:
+      label: |
+        # Pull Requests
+        > The list is added to throughout the sprint
+      description: 'This list is created as the sprint progresses'
+      placeholder: |
+        1. #1 (example pr)
+        2. #2 (example pr)
+        3. #3 (example pr)
+
+  # [textarea] changelog
+  - type: textarea
+    id: changelog
+    attributes:
+      label: |
+        # Changelog
+        > Here's what's changing this sprint!
+      description: 'Through the sprint, when PRs are merged, add changes to the list. Can list changes intended at the beginning as well.'
+      placeholder: |
+        1. Theme of PR (ref: #1)
+          i. example change 1
+          ii. breaking change 2
+        2. Another merged PR (ref: #2)
+        3. Yet another PR (ref: #3)
+
+  # [textarea] carryover
+  - type: textarea
+    id: carryover
+    attributes:
+      label: |
+        # Carryover
+        > The following were not addressed. Carried over to next sprint
+      description: 'This is edited at the end of the sprint.'
+      placeholder: |
+        1. #1 (example issue)
+        2. #2 (example issue)
+        3. #3 (example issue)
+
+  # [textarea] notes
+  - type: textarea
+    id: notes
+    attributes:
+      label: |
+        # Notes or Thoughts
+        > Anything else?
+      description: 'This is intended as a section to list or link unrelated or loosely related thoughts or notes for future reference.'
+      placeholder: 'watcha thinkin bruv?'
