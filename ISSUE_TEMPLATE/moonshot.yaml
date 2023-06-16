@@ -1,8 +1,11 @@
-name: Moonshot
-description: Use this template to open a discussion on a possible trajectory or idea. This could be a feature request, or a general observation.
+## Created: 2023-06-13 @thisispalash
+## Updated: 2023-06-15 @thisispalash
+
+name: 'Moonshot'
+description: 'Use this template to open a discussion on a possible trajectory or idea. This could be a feature request, or a general observation.'
 title: '[Moonshot]: '
 labels: ['brainstorm', 'help wanted']
-assignees: ['@thisispalash']
+assignees: ['thisispalash']
 body: # * = required
 
   # [markdown] information
@@ -22,10 +25,9 @@ body: # * = required
   - type: textarea
     id: the-what
     attributes:
-      label: Description
-      description: Describe the moonshot! _What_ is this big idea?
-      placeholder: pls sir, reveal your thoughts!
-      render: txt
+      label: 'Description'
+      description: 'Describe the moonshot! _What_ is this big idea?'
+      placeholder: 'pls sir, reveal your thoughts!'
     validations:
       required: true
   
@@ -33,10 +35,9 @@ body: # * = required
   - type: textarea
     id: the-why
     attributes:
-      label: Moonshot Journey
-      description: Describe how you got to this point. _Why_ do you think this idea is worth pursuing?
-      placeholder: pls sir, reveal your reasoning!
-      render: txt
+      label: 'Moonshot Journey'
+      description: 'Describe how you got to this point. _Why_ do you think this idea is worth pursuing?'
+      placeholder: 'pls sir, reveal your reasoning!'
     validations:
       required: true
 
@@ -44,10 +45,9 @@ body: # * = required
   - type: textarea
     id: the-how
     attributes:
-      label: Considerations
-      description: _How_ do you think we should address this _opportunity_?
-      placeholder: pls sir, help us!
-      render: txt
+      label: 'Considerations'
+      description: '_How_ do you think we should address this _opportunity_?'
+      placeholder: 'pls sir, help us!'
     validations:
       required: true
   
@@ -55,16 +55,16 @@ body: # * = required
   - type: textarea
     id: support
     attributes:
-      label: Supporting materials
-      description: Attach any supporting materials here. Screenshots, links, etc.
-      placeholder: pls sir, let us see what you see!
+      label: 'Supporting materials'
+      description: 'Attach any supporting materials here. Screenshots, links, etc.'
+      placeholder: 'pls sir, let us see what you see!'
   
   # [dropdown] Urgency (lower is more urgent) *
   - type: dropdown
     id: urgency
     attributes:
-      label: Urgency
-      description: How critical would you think this feature is? (1 = most urgent)
+      label: 'Urgency'
+      description: 'How critical would you think this feature is? (1 = most urgent)'
       options:
         - 0 (the train has left)
         - 1 (the train is leaving)
@@ -79,9 +79,6 @@ body: # * = required
   - type: textarea
     id: miscellaneous
     attributes:
-      label: Thoughts
-      description: Use this area for any lingering thoughts or comments.
-      placeholder: whatcha thinkin' bruv?
-
-## Created: 2023-06-13 @thisispalash
-## Updated: 2023-06-15 @thisispalash
+      label: 'Thoughts'
+      description: 'Use this area for any lingering thoughts or comments.'
+      placeholder: 'whatcha thinkin' bruv?'

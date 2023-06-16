@@ -1,5 +1,8 @@
-name: Codebase Improvement
-description: Use this template to open an issue about the codebase; this could be optimization or dev experience or devops.
+## Created: 2023-06-13 @thisispalash
+## Updated: 2023-06-15 @thisispalash
+
+name: 'Codebase Improvement'
+description: 'Use this template to open an issue about the codebase; this could be optimization or dev experience or devops.'
 title: '[Codebase]: '
 labels: ['codebase', 'enhancement']
 assignees: ['henry1jin']
@@ -9,8 +12,8 @@ body: # * = required
   - type: checkboxes
     id: root-reasoning
     attributes:
-      label: Specifically, what in the codebase is being improved?
-      description: This issue is for codebase stuff. This will likely be highly technical. Select all that apply. If none apply,
+      label: 'Specifically, what in the codebase is being improved?'
+      description: 'This issue is for codebase stuff. This will likely be highly technical. Select all that apply. If none apply,'
       options:
         - label: optimization; addressing this would improve overall performance
           required: false
@@ -25,10 +28,9 @@ body: # * = required
   - type: textarea
     id: the-what
     attributes:
-      label: Description
-      description: Describe the issue. _What_ is the problem? Include ample code examples.
-      placeholder: pls sir, reveal your secrets!
-      render: txt
+      label: 'Description'
+      description: 'Describe the issue. _What_ is the problem? Include ample code examples.'
+      placeholder: 'pls sir, reveal your secrets!'
     validations:
       required: true
   
@@ -36,10 +38,9 @@ body: # * = required
   - type: textarea
     id: the-why
     attributes:
-      label: Issue Journey
-      description: Describe how you got to this point. _Why_ do you want to fix this issue? Even mention potential benefits of addressing this issue.
-      placeholder: pls sir, let us travel together!
-      render: txt
+      label: 'Issue Journey'
+      description: 'Describe how you got to this point. _Why_ do you want to fix this issue? Even mention potential benefits of addressing this issue.'
+      placeholder: 'pls sir, let us travel together!'
     validations:
       required: true
 
@@ -47,10 +48,9 @@ body: # * = required
   - type: textarea
     id: the-how
     attributes:
-      label: Considerations
-      description: _How_ do you think we should address this issue? Would this break anything currently deployed?
-      placeholder: pls sir, help us!
-      render: txt
+      label: 'Considerations'
+      description: '_How_ do you think we should address this issue? Would this break anything currently deployed?'
+      placeholder: 'pls sir, help us!'
     validations:
       required: true
   
@@ -58,16 +58,16 @@ body: # * = required
   - type: textarea
     id: support
     attributes:
-      label: Supporting materials
-      description: Attach any supporting materials here. Screenshots, links, etc.
-      placeholder: pls sir, let us see what you see!
+      label: 'Supporting materials'
+      description: 'Attach any supporting materials here. Screenshots, links, etc.'
+      placeholder: 'pls sir, let us see what you see!'
   
   # [dropdown] Urgency (lower is more urgent) *
   - type: dropdown
     id: urgency
     attributes:
-      label: Urgency
-      description: How critical would you think this feature is? (1 = most urgent)
+      label: 'Urgency'
+      description: 'How critical would you think this feature is? (1 = most urgent)'
       options:
         - 0 (needed yesterday)
         - 1 (ASAP)
@@ -82,9 +82,7 @@ body: # * = required
   - type: textarea
     id: miscellaneous
     attributes:
-      label: Thoughts
-      description: Use this area for any lingering thoughts or comments.
-      placeholder: whatcha thinkin'?
-
-## Created: 2023-06-13 @thisispalash
-## Updated: 2023-06-15 @thisispalash
+      label: 'Thoughts'
+      description: 'Use this area for any lingering thoughts or comments.'
+      placeholder: |
+        whatcha thinkin' bruv?
