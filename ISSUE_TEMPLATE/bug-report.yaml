@@ -1,20 +1,27 @@
-name: Bug Report
-description: File a bug report
+## Created: 2023-06-13 @thisispalash
+## Updated: 2023-06-15 @thisispalash
+
+name: 'Bug Report'
+description: 'File a bug report'
 title: '[Bug]: '
 labels: ['bug', 'help wanted']
 assignees: ['']
-body:
+body: # * = required
+
+  # [markdown] information
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report! You will need ~5 minutes to fill this out. 
         
         Steps overview,
-          - describe bug
-          - record bug
-          - explain why bug
-          - consider fixes
-          - add debugging info
+          - [ ] describe bug
+          - [ ] record bug
+          - [ ] explain why bug
+          - [ ] consider fixes
+          - [ ] add debugging info
+
+  # [textarea] what happened *
   - type: textarea
     id: what-happened
     attributes:
@@ -27,6 +34,8 @@ body:
         ### Screenshots
     validations:
       required: true
+  
+  # [textarea] steps to reproduce *
   - type: textarea
     id: steps
     attributes:
@@ -41,6 +50,8 @@ body:
         [See video](https://www.loom.com/...)
     validations:
       required: true
+  
+  # [textarea] what was expected *
   - type: textarea
     id: expectations
     attributes:
@@ -51,6 +62,8 @@ body:
         The bug shouldn't have happened because...
     validations:
       required: true
+  
+  # [textarea] possible solutions *
   - type: textarea
     id: solutions
     attributes:
@@ -65,6 +78,8 @@ body:
         perhaps fix by...'
     validations:
       required: true
+ 
+  # [dropdown] severity *
   - type: dropdown
     id: severity
     attributes:
@@ -78,6 +93,10 @@ body:
         - 5 (acually, feature request)
     validations:
       required: true
+  
+  ## Debugging info ##
+
+  # [dropdown] browser *
   - type: dropdown
     id: browsers
     attributes:
@@ -90,6 +109,8 @@ body:
         - Microsoft Edge
     validations:
       required: true
+  
+  # [dropdown] machine *
   - type: dropdown
     id: machine
     attributes:
@@ -104,12 +125,11 @@ body:
         - Other
     validations:
       required: true
+  
+  # [textarea-shell] logs
   - type: textarea
     id: logs
     attributes:
       label: 'Relevant log output'
       description: 'Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.'
       render: shell
-
-## Created: 2023-06-13 @thisispalash
-## Updated: 2023-06-15 @thisispalash
