@@ -1,51 +1,58 @@
-# template reference: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
-# body reference https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
-# See detailed reference below
+## Created: 2023-06-13 @thisispalash
+## Updated: 2023-06-15 @thisispalash
 
-name: Better UI
-description: This is an example template. Copy this file to create your own templates. Do not use this template to open your issue.
+name: 'Better UI'
+description: 'Use this template to report any breaking UI or annouying UI issues.'
 title: '[Better UI]: '
 labels: ['ui-fix', 'enhancement']
-assignees: []
+assignees: ['']
 body:
+
+  # [markdown] information
   - type: markdown
     attributes:
       value: |
-        This issue is for reporting small UI things that annoy you as you build / develop / use the app. 
-        These should be addressed pretty soon, but they are not the focus of the current sprint.
-        They may also be opinionated, in which case we might be able to modularize and decentralize the core issue.
+        This issue is for reporting small UI things that annoy you as you build / develop / use the app. These should be addressed pretty soon, but they are not the focus of the current sprint. They may also be opinionated, in which case we might be able to modularize and decentralize the core issue.
+  
+  # [textarea] the-what
   - type: textarea
-    id: description
+    id: the-what
     attributes:
-      label: Description
-      description: Describe the issue. What is the annoying / breaking thing in the UI?
-      placeholder: Please, reveal your secrets!
-      value: This thing that happens is kinda annoying becasue ...
+      label: 'Description'
+      description: 'Describe the issue. _What_ is the annoying / breaking thing in the UI?'
+      placeholder: 'pls sir, reveal your secrets!'
+      value: 'When this thing happens, this breaks, which is extremely annoying because ...'
     validations:
       required: true
+  
+  # [textarea] the-how
   - type: textarea
-    id: issue-journey
+    id: the-how
     attributes:
-      label: Issue Journey
-      description: How did you come across this issue? Was it something related to what you were working on? Is there any additional context necessary to understand this issue? Feel free to include any media, such as screens or looms
-      placeholder: Please, let us be annoyed too!
-      value: When you click this thing, the thing happens. To get to this stage, I was doing ...
+      label: 'Issue Journey'
+      description: 'How did you come across this issue? Was it something related to what you were working on? Is there any additional context necessary to understand this issue? Feel free to include any media, such as screens or looms.'
+      placeholder: pls sir, let us travel together!
+      value: 'When you click this thing, the thing happens. To get to this stage, I was doing ...'
     validations:
       required: true
+  
+  # [textarea] the-why
   - type: textarea
-    id: considerations
+    id: the-why
     attributes:
-      label: Considerations
-      description: Any thoughts on how to fix this? Are there multiple options? Can a fix break something else? Feel free to attach any prior discussions or media.
-      placeholder: Please, help us!
-      value: Maybe it is breaking because of ..., so we can maybe fix by ...
+      label: 'Considerations'
+      description: 'Any thoughts on how to fix this? Are there multiple options? Can a fix break something else? Feel free to attach any prior discussions or media.'
+      placeholder: pls sir, help us!
+      value: 'Maybe it is breaking because of ..., so we can maybe fix by ...'
     validations:
       required: true
+  
+  # [dropdown] severity
   - type: dropdown
     id: severity
     attributes:
-      label: Severity
-      description: How critical would you think this bug is?
+      label: 'Severity'
+      description: 'How critical would you think this issue is?'
       options:
         - 1 (Breaking)
         - 2 (Not breaking, but important)
