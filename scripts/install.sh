@@ -1,4 +1,5 @@
 # TODO: add options for
+#  check path
 #  branch
 #  specific commit
 #  reinstall
@@ -8,10 +9,10 @@ git pull origin master
 
 echo "---- Installing templates"
 mkdir ../.github
-cp -r -f ISSUE_TEMPLATE ../.github
+cp -r -f ISSUE_TEMPLATE .github
 echo "created new folder .github/ISSUE_TEMPLATE"
-# cp -r -f PULL_REQUEST_TEMPLATE ../.github
-# echo "created new folder .github/PULL_REQUEST_TEMPLATE"
+cp -r -f PULL_REQUEST_TEMPLATE .github
+echo "created new folder .github/PULL_REQUEST_TEMPLATE"
 
 echo "---- Committing changes"
 cd ..

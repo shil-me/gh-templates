@@ -15,9 +15,11 @@ These are templates to fill out Issues or Pull Requests. This repository will co
 - Installing
 ```sh
 # cd root-of-repo-needing-templates
-git submodule add https://github.com/shil-me/gh-templates.git .github
-git commit -m "add \`.github\` submodule from https://github.com/shil-me/gh-templates.git"
-git push
+git submodule add https://github.com/shil-me/gh-templates.git gh-templates
+cd gh-templates && sh ./sh/install.sh # Options support coming soon
+git add . && git commit -m "install gh-templates"
+git commit -m "add submodule from https://github.com/shil-me/gh-templates.git"
+cd .. && git push
 # note, for the templates to work, they must be included on the default branch of the repository #
 ```
 - Upgrading
@@ -27,6 +29,12 @@ cd .github
 git pull origin master
 git commit -m "update \`.github\` submodule"
 git push
+```
+- Removing ([stackoverflow](https://stackoverflow.com/a/1260982))
+```sh
+git rm path-to-submodule
+rm -rf .git/modules/path-to-submodule
+git config --remove-section submodule.path-to-submodule
 ```
 
 ## Currently Included
