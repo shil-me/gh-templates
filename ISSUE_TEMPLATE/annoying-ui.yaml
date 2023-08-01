@@ -1,10 +1,7 @@
-## Created: 2023-06-13 @thisispalash
-## Updated: 2023-06-15 @thisispalash
-
 name: 'Better UI'
 description: 'Use this template to report any breaking UI or annouying UI issues.'
-title: '[Better UI]: '
-labels: ['ui-fix', 'enhancement']
+title: '[UI]: '
+labels: ['ui-fix', '']
 assignees: ['']
 body: # * = required
 
