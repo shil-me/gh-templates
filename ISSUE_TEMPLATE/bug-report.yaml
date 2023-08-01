@@ -13,10 +13,9 @@ body: # * = required
         
         Steps overview,
           1. describe bug
-          2. record bug
-          3. explain why bug
-          4. consider fixes
-          5. add debugging info
+          2. explain why bug
+          3. consider fixes
+          4. add debugging info
 
   # [textarea] what happened *
   - type: textarea
@@ -73,6 +72,12 @@ body: # * = required
       required: true
   
   ## Debugging info ##
+
+  # [markdown] information
+  - type: markdown
+    attributes:
+      value: |
+        This section asks you for specific debugging information so we can reproduce the bug, _and squash it_!
 
   # [textarea] steps to reproduce *
   - type: textarea
