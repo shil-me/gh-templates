@@ -31,21 +31,6 @@ body: # * = required
     validations:
       required: true
   
-  # [textarea] steps to reproduce *
-  - type: textarea
-    id: steps
-    attributes:
-      label: 'Steps to reproduce'
-      description: 'Please list the steps to reproduce the bug. Better yet, make a video (on loom)!'
-      placeholder: |
-        1. Go to ...
-        2. Click on ...
-        3. ...
-        
-        [See video](https://www.loom.com/...)
-    validations:
-      required: true
-  
   # [textarea] what was expected *
   - type: textarea
     id: expectations
@@ -89,6 +74,21 @@ body: # * = required
   
   ## Debugging info ##
 
+  # [textarea] steps to reproduce *
+  - type: textarea
+    id: steps
+    attributes:
+      label: 'Steps to reproduce'
+      description: 'Please list the steps to reproduce the bug. Better yet, make a video (on loom)!'
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. ...
+        
+        [See video](https://www.loom.com/...)
+    validations:
+      required: true
+  
   # [dropdown] browser *
   - type: dropdown
     id: browsers
