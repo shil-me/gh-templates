@@ -43,13 +43,13 @@ Currently, there are a bunch of issue and pull request templates (details below)
 
 ### Issue Templates
 
-- [x] [`annoying-ui`](./ISSUE_TEMPLATE/annoying-ui.yaml) : Something that is off in the UI of the application.
-- [x] [`bug-report`](./ISSUE_TEMPLATE/bug-report.yaml) : Quite self-explanatory. These issues may lead to larger issues.
-- [x] [`codebase-improvement`](./ISSUE_TEMPLATE/codebase-improvement.yaml) : These are for optimizations and for improving dev experience as we build.
-- [x] [`documentation`](./ISSUE_TEMPLATE/documentation.yaml) : Docs are either missing or incorrect, for the public or for the codebase.
-- [x] [`feature-request`](./ISSUE_TEMPLATE/feature-request.yaml) : A new feature for the product. These should ideally be also coming in from the public.
-- [x] [`moonshot`](./ISSUE_TEMPLATE/moonshot.yaml) : A crazy idea that has exponential scale, but would require some shift in current focus.
-- [x] [`observer-ux`](./ISSUE_TEMPLATE/observer-ux.yaml) : Similar to `annoying-ui`, but for user experience.
+- [ ] [`annoying-ui`](./ISSUE_TEMPLATE/annoying-ui.yaml) : Something that is off in the UI of the application.
+- [x] [`bug-report`](./ISSUE_TEMPLATE/bug-report.yaml) : Quite self-explanatory. Note the order of questions to produce richer reports.
+- [ ] [`codebase-improvement`](./ISSUE_TEMPLATE/codebase-improvement.yaml) : These are for optimizations and for improving dev experience as we build.
+- [ ] [`documentation`](./ISSUE_TEMPLATE/documentation.yaml) : Docs are either missing or incorrect, for the public or for the codebase.
+- [ ] [`feature-request`](./ISSUE_TEMPLATE/feature-request.yaml) : A new feature for the product. These should ideally be also coming in from the public.
+- [ ] [`moonshot`](./ISSUE_TEMPLATE/moonshot.yaml) : A crazy idea that has exponential scale, but would require some shift in current focus.
+- [ ] [`observer-ux`](./ISSUE_TEMPLATE/observer-ux.yaml) : Similar to `annoying-ui`, but for user experience.
 - [ ] [`test-suite`](./ISSUE_TEMPLATE/test-suite.yaml) : Missing or incomplete tests in our codebase.
 
 ### Pull Request Templates

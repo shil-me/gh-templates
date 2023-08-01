@@ -1,11 +1,8 @@
-## Created: 2023-06-13 @thisispalash
-## Updated: 2023-06-15 @thisispalash
-
 name: 'Bug Report'
 description: 'File a bug report'
 title: '[Bug]: '
 labels: ['bug', 'help wanted']
-assignees: ['']
+assignees: ['henry1jin']
 body: # * = required
 
   # [markdown] information
@@ -15,11 +12,10 @@ body: # * = required
         Thanks for taking the time to fill out this bug report! You will need ~5 minutes to fill this out. 
         
         Steps overview,
-          - [ ] describe bug
-          - [ ] record bug
-          - [ ] explain why bug
-          - [ ] consider fixes
-          - [ ] add debugging info
+          1. describe bug
+          2. explain why bug
+          3. consider fixes
+          4. add debugging info
 
   # [textarea] what happened *
   - type: textarea
@@ -27,27 +23,10 @@ body: # * = required
     attributes:
       label: 'What happened?'
       description: 'Describe, briefly, what happened; ie, what the bug is. Please also attach screenshots if possible.'
-      placeholder: 'Please describe what happened.'
-      value: |
+      placeholder: |
         ### Bug Description
 
         ### Screenshots
-    validations:
-      required: true
-  
-  # [textarea] steps to reproduce *
-  - type: textarea
-    id: steps
-    attributes:
-      label: 'Steps to reproduce'
-      description: 'Please list the steps to reproduce the bug. Better yet, make a video (on loom)!'
-      placeholder: 'Please list steps or link video.'
-      value: |
-        1. Go to ...
-        2. Click on ...
-        3. ...
-        
-        [See video](https://www.loom.com/...)
     validations:
       required: true
   
@@ -57,8 +36,7 @@ body: # * = required
     attributes:
       label: 'What did you expect or want to have happened?'
       description: 'Please describe what you expected to have happened. If you have any links to previous discussions or designs, please link them here.'
-      placeholder: 'Please describe your expectations.'
-      value: |
+      placeholder: |
         The bug shouldn't have happened because...
     validations:
       required: true
@@ -69,13 +47,12 @@ body: # * = required
     attributes:
       label: 'What do you think is causing this bug? How would you fix it?'
       description: 'Please describe what you think is causing this bug. If you have any ideas on how to fix it, please describe them here. If you have any links to previous discussions or designs, please link them here.'
-      placeholder: 'Please discuss the bug a little.'
-      value: |
+      placeholder: |
         ### Cause
         The bug is probably being caused by... 
         
         ### Fix
-        perhaps fix by...'
+        perhaps this can be fixed if we do...
     validations:
       required: true
  
@@ -84,7 +61,7 @@ body: # * = required
     id: severity
     attributes:
       label: 'Severity'
-      description: 'How critical would you think this bug is?'
+      description: 'How critical would you think this bug is? (1 : highest priority)'
       options:
         - 1 (Breaking)
         - 2 (Not breaking, but important)
@@ -96,6 +73,27 @@ body: # * = required
   
   ## Debugging info ##
 
+  # [markdown] information
+  - type: markdown
+    attributes:
+      value: |
+        This section asks you for specific debugging information so we can reproduce the bug, _and squash it_!
+
+  # [textarea] steps to reproduce *
+  - type: textarea
+    id: steps
+    attributes:
+      label: 'Steps to reproduce'
+      description: 'Please list the steps to reproduce the bug. Better yet, make a video (on loom)!'
+      placeholder: |
+        1. Go to ...
+        2. Click on ...
+        3. ...
+        
+        [See video](https://www.loom.com/...)
+    validations:
+      required: true
+  
   # [dropdown] browser *
   - type: dropdown
     id: browsers
@@ -107,6 +105,7 @@ body: # * = required
         - Chrome
         - Safari
         - Microsoft Edge
+        - Other
     validations:
       required: true
   
