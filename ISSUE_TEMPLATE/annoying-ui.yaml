@@ -2,7 +2,7 @@ name: 'Better UI'
 description: 'Use this template to report any breaking UI or annouying UI issues.'
 title: '[UI]: '
 labels: ['ui-fix', '']
-assignees: ['']
+assignees: ['ChinmayGopal931']
 body: # * = required
 
   # [markdown] information
@@ -17,19 +17,7 @@ body: # * = required
     attributes:
       label: 'Description'
       description: 'Describe the issue. _What_ is the annoying / breaking thing in the UI?'
-      placeholder: 'pls sir, reveal your secrets!'
-      value: 'When this thing happens, this breaks, which is extremely annoying because ...'
-    validations:
-      required: true
-  
-  # [textarea] the-how *
-  - type: textarea
-    id: the-how
-    attributes:
-      label: 'Issue Journey'
-      description: 'How did you come across this issue? Was it something related to what you were working on? Is there any additional context necessary to understand this issue? Feel free to include any media, such as screens or looms.'
-      placeholder: pls sir, let us travel together!
-      value: 'When you click this thing, the thing happens. To get to this stage, I was doing ...'
+      placeholder: 'pls, reveal your secrets!'
     validations:
       required: true
   
@@ -37,10 +25,19 @@ body: # * = required
   - type: textarea
     id: the-why
     attributes:
+      label: 'Issue Journey'
+      description: 'How did you come across this issue? _Why_ is it annoying / breaking?'
+      placeholder: 'let us see what you see!'
+    validations:
+      required: true
+  
+  # [textarea] the-how *
+  - type: textarea
+    id: the-how
+    attributes:
       label: 'Considerations'
-      description: 'Any thoughts on how to fix this? Are there multiple options? Can a fix break something else? Feel free to attach any prior discussions or media.'
-      placeholder: pls sir, help us!
-      value: 'Maybe it is breaking because of ..., so we can maybe fix by ...'
+      description: 'Any thoughts on how to address this? _How_ can this not be annoying / breaking?'
+      placeholder: 'pls , help us!'
     validations:
       required: true
   
@@ -49,7 +46,7 @@ body: # * = required
     id: severity
     attributes:
       label: 'Severity'
-      description: 'How critical would you think this issue is?'
+      description: 'How critical would you think this issue is? (1 : highest priority)'
       options:
         - 1 (Breaking)
         - 2 (Not breaking, but important)
