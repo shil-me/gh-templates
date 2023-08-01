@@ -48,7 +48,6 @@ Currently, there are a bunch of issue and pull request templates (details below)
 - [x] [`codebase-improvement`](./ISSUE_TEMPLATE/codebase-improvement.yaml) : These are for optimizations and for improving dev experience as we build.
 - [x] [`documentation`](./ISSUE_TEMPLATE/documentation.yaml) : Docs are either missing or incorrect, for the public or for the codebase.
 - [x] [`feature-request`](./ISSUE_TEMPLATE/feature-request.yaml) : A new feature for the product. These should ideally be also coming in from the public.
-- [x] [`moonshot`](./ISSUE_TEMPLATE/moonshot.yaml) : A crazy idea that has exponential scale, but would require some shift in current focus.
 - [x] [`observer-ux`](./ISSUE_TEMPLATE/observer-ux.yaml) : Similar to `annoying-ui`, but for user experience.
 - [ ] [`test-suite`](./ISSUE_TEMPLATE/test-suite.yaml) : Missing or incomplete tests in our codebase.
 
