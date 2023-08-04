@@ -53,6 +53,9 @@ Currently, there are a bunch of issue and pull request templates (details below)
 - [ ] [`test-suite`](./ISSUE_TEMPLATE/test-suite.yaml) : Missing or incomplete tests in our codebase.
 
 ### Pull Request Templates
+> There will likely be only a single PR template for now. Was not able to get multiple templates working.
+>> An alternative can be multiple templates here and when connecting to main repos, we select one, most appropriate for the repo.
+
 
 - [ ] convenience :
 - [ ] feature :
