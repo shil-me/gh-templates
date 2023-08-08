@@ -3,15 +3,23 @@
 
 These are templates to fill out Issues or Pull Requests. This repository will contain all github related code. It is meant to be included as a submodule under `.github`.
 
+**features**
+
+- [ ] Collection of issue and pr templates that can be imported as a submodule anywhere
+- [ ] Independent `.github` to maintain and evolve this repository
+- [ ] Update script that can be run to bring submodules to current release
+- [ ] Bash scripts to generate new templates via [interactive] cli
+
 ## Usage
 
 - Installing
 ```sh
 # cd root-of-repo-needing-templates
-git submodule add https://github.com/shil-me/gh-templates.git .github
-git add .github
-git commit -m "add \`.github\` submodule from https://github.com/shil-me/gh-templates.git"
-git push
+git submodule add https://github.com/shil-me/gh-templates.git gh-templates
+cd gh-templates && sh ./sh/install.sh # Options support coming soon
+git add . && git commit -m "install gh-templates"
+git commit -m "add submodule from https://github.com/shil-me/gh-templates.git"
+cd .. && git push
 # note, for the templates to work, they must be included on the default branch of the repository #
 ```
 - Upgrading
@@ -19,9 +27,14 @@ git push
 # cd root-of-repo-using-templates
 cd .github
 git pull origin master
-git add .
 git commit -m "update \`.github\` submodule"
 git push
+```
+- Removing ([stackoverflow](https://stackoverflow.com/a/1260982))
+```sh
+git rm path-to-submodule
+rm -rf .git/modules/path-to-submodule
+git config --remove-section submodule.path-to-submodule
 ```
 
 ## Currently Included
@@ -30,12 +43,14 @@ Currently, there are a bunch of issue and pull request templates (details below)
 
 ### Issue Templates
 
-- [ ] annoying-ui : 
-- [ ] bug-report :
-- [ ] codebase-improvement :
-- [ ] feature-request :
-- [ ] moonshot :
-- [ ] observer-ux :
+- [x] [`annoying-ui`](./ISSUE_TEMPLATE/annoying-ui.yaml) : Something that is off in the UI of the application.
+- [x] [`bug-report`](./ISSUE_TEMPLATE/bug-report.yaml) : Quite self-explanatory. These issues may lead to larger issues.
+- [x] [`codebase-improvement`](./ISSUE_TEMPLATE/codebase-improvement.yaml) : These are for optimizations and for improving dev experience as we build.
+- [x] [`documentation`](./ISSUE_TEMPLATE/documentation.yaml) : Docs are either missing or incorrect, for the public or for the codebase.
+- [x] [`feature-request`](./ISSUE_TEMPLATE/feature-request.yaml) : A new feature for the product. These should ideally be also coming in from the public.
+- [x] [`moonshot`](./ISSUE_TEMPLATE/moonshot.yaml) : A crazy idea that has exponential scale, but would require some shift in current focus.
+- [x] [`observer-ux`](./ISSUE_TEMPLATE/observer-ux.yaml) : Similar to `annoying-ui`, but for user experience.
+- [ ] [`test-suite`](./ISSUE_TEMPLATE/test-suite.yaml) : Missing or incomplete tests in our codebase.
 
 ### Pull Request Templates
 

@@ -1,0 +1,94 @@
+name: Documentation
+description: Use this template to report any missing documentation issues. Or any problems with existing docs. The docs can be public (for the app) or private (for the code).
+title: '[Documentation]: '
+labels: ['documentation', 'good first issue']
+assignees: ['@thisispalash', '@griffinthegrand']
+body: # * = required
+
+  # [checkboxes] issue type *
+  - type: checkboxes
+    id: root-reasoning
+    attributes:
+      label: Public or Private?
+      description: This issue is relevant to public facing docs (on how to use our app) or private facing docs (documentation of code)?
+      options:
+        - Public
+        - Codebase
+    validations:
+      required: true
+
+  # [input] link *
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      description: Link to the documentation in question. Or the repository or place on app that lacks it.
+      placeholder: pls sir, show us the way!
+    validations:
+      required: true
+      
+  # [textarea] the what *
+  - type: textarea
+    id: the-what
+    attributes:
+      label: Description
+      description: Describe the docs. _What_ is missing or wrong?
+      placeholder: pls sir, reveal your thoughts!
+      render: txt
+    validations:
+      required: true
+  
+  # [textarea] the why *
+  - type: textarea
+    id: the-why
+    attributes:
+      label: Issue Journey
+      description: Describe how you got to this point. _Why_ do you think updating our documentation would be helpful (through this issue)?
+      placeholder: pls sir, reveal your reasoning!
+      render: txt
+    validations:
+      required: true
+
+  # [textarea] the how *
+  - type: textarea
+    id: the-how
+    attributes:
+      label: Considerations
+      description: _How_ do you think we should address this issue? Can your provide a structure?
+      placeholder: pls sir, help us!
+      render: txt
+    validations:
+      required: true
+  
+  # [textarea] supporting materials
+  - type: textarea
+    id: support
+    attributes:
+      label: Supporting materials
+      description: Attach any supporting materials here. Screenshots, links, etc.
+      placeholder: pls sir, let us see what you see!
+  
+  # [dropdown] Urgency (lower is more urgent) *
+  - type: dropdown
+      id: urgency
+      attributes:
+        label: Urgency
+        description: How critical would you think this feature is? (1 = most urgent)
+        options:
+          - 0 (something is wrong)
+          - 1 (ASAP)
+          - 2 (should do soon)
+          - 3 (would be nice to have)
+      validations:
+        required: true
+
+  # [textarea] miscellaneous / open section
+  - type: textarea
+    id: miscellaneous
+    attributes:
+      label: Thoughts
+      description: Use this area for any lingering thoughts or comments.
+      placeholder: whatcha thinkin'?
+
+## Created: 2023-06-13 @thisispalash
+## Updated: 

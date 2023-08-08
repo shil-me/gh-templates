@@ -1,0 +1,121 @@
+name: [EXAMPLE] Issue Template
+description: This is an example template. Copy this file to create your own templates. Do not use this template to open your issue.
+title: '[Example]: '
+labels: ['example', 'triage']
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is an example template. Copy this file to create your own templates.
+        This field is a markdown field, so you can use markdown formatting here.
+        "##Protip", to insert Markdown headers, wrap your text in quotes.
+  - type: input
+    id: example-input
+    attributes:
+      label: Example Input Label
+      description: This is an example input description.
+      placeholder: This is an example input placeholder.
+      value: This is an example input value.
+    validations:
+      required: true
+  - type: textarea
+    id: example-textarea
+    attributes:
+      label: Example Textarea Label
+      description: This is an example textarea description.
+      placeholder: This is an example textarea placeholder.
+      value: This is an example textarea value.
+      render: txt
+    validations:
+      required: true
+  - type: dropdown
+    id: example-dropdown
+    attributes:
+      label: Example Dropdown Label
+      description: This is an example dropdown description.
+      options:
+        - label: Option 1 (using label)
+        - Option 2
+        - Option 3
+    validations:
+      required: true
+  - type: checkboxes
+    id: example-checkboxes
+    attributes:
+      label: Example Checkboxes Label
+      description: This is an example checkboxes description.
+      options:
+        - Option 1
+        - label: Option 2 (using label)
+        - Option 3
+    validations:
+      required: true
+
+## Reference / Documentation ##
+# make sure to delete this section before using this template reduce file size
+
+# template reference: https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-issue-forms
+# body reference https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/syntax-for-githubs-form-schema
+
+# ^ - required
+
+# ^name: A name for the issue form template. Must be unique from all other templates, including Markdown templates.
+# ^description: A description for the issue form template, which appears in the template chooser interface.
+# assignees: People who will be automatically assigned to issues created with this template.
+# labels: Labels that will automatically be added to issues created with this template. If a label does not already exist in the repository, it will not be automatically added to the issue.
+# title: A default title that will be pre-populated in the issue submission form.
+# ^body: Definition of the input types in the form.
+#   - ^type: The type of element that you want to define - checkboxes, dropdown, input, markdown, textarea
+#     id: The identifier for the element, except when type is set to markdown
+#     ^attributes: A set of key-value pairs that define the properties of the element.
+#     validations: A set of key-value pairs that set constraints on the element.
+#   - ^type: checkboxes
+#     id: explain-checkbox
+#     ^attributes:
+#       ^label: A brief description of the expected user input, which is displayed in the form.
+#       description: A description of the set of checkboxes, which is displayed in the form. Supports Markdown formatting.
+#       ^options: An array of checkboxes that the user can select. For syntax, see below.
+#         - ^label: The identifier for the option, which is displayed in the form. Markdown is supported for bold or italic text formatting, and hyperlinks.
+#         - Option 2
+#     validations:
+#       required: Prevents form submission until element is completed. Only for public repositories.
+#   - ^type: dropdown
+#     id: explain-dropdown
+#     ^attributes:
+#       ^label: A brief description of the expected user input, which is displayed in the form.
+#       description: A description of the dropdown to provide extra context or guidance, which is displayed in the form.
+#       multiple: Determines if the user can select more than one option.
+#       ^options: An array of options the user can choose from. Cannot be empty and all choices must be distinct.
+#         - Option 1
+#         - Option 2
+#     validations:
+#       required: Prevents form submission until element is completed. Only for public repositories.
+#   - ^type: input
+#     id: explain-input
+#     ^attributes:
+#       ^label: A brief description of the expected user input, which is also displayed in the form.
+#       description: A description of the field to provide context or guidance, which is displayed in the form.
+#       placeholder: A semi-transparent placeholder that renders in the field when empty.
+#       value: Text that is pre-filled in the field.
+#     validations:
+#       required: Prevents form submission until element is completed. Only for public repositories.
+#   - ^type: markdown
+#     id: explain-markdown
+#     ^attributes:
+#       ^value: |
+#          The text that is rendered. Markdown formatting is supported.
+#          For multi-line text, you can use the pipe (|) operator.
+#          "##Protip", 
+#          YAML processing will treat the hash symbol as a comment. 
+#          To insert Markdown headers, wrap your text in quotes.
+#   - ^type: textarea
+#     id: explain-textarea
+#     ^attributes:
+#       ^label: A brief description of the expected user input, which is also displayed in the form.
+#       description: A description of the text area to provide context or guidance, which is displayed in the form.
+#       placeholder: A semi-opaque placeholder that renders in the text area when empty.
+#       value: Text that is pre-filled in the text area.
+#       render: If a value is provided, submitted text will be formatted into a codeblock. When this key is provided, the text area will not expand for file attachments or Markdown editing. For keys see languages known to github - https://github.com/github-linguist/linguist/blob/master/lib/linguist/languages.yml
+#     validations:
+#       required: Prevents form submission until element is completed. Only for public repositories.

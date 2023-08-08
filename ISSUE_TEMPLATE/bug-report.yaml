@@ -1,0 +1,135 @@
+## Created: 2023-06-13 @thisispalash
+## Updated: 2023-06-15 @thisispalash
+
+name: 'Bug Report'
+description: 'File a bug report'
+title: '[Bug]: '
+labels: ['bug', 'help wanted']
+assignees: ['']
+body: # * = required
+
+  # [markdown] information
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! You will need ~5 minutes to fill this out. 
+        
+        Steps overview,
+          - [ ] describe bug
+          - [ ] record bug
+          - [ ] explain why bug
+          - [ ] consider fixes
+          - [ ] add debugging info
+
+  # [textarea] what happened *
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: 'What happened?'
+      description: 'Describe, briefly, what happened; ie, what the bug is. Please also attach screenshots if possible.'
+      placeholder: 'Please describe what happened.'
+      value: |
+        ### Bug Description
+
+        ### Screenshots
+    validations:
+      required: true
+  
+  # [textarea] steps to reproduce *
+  - type: textarea
+    id: steps
+    attributes:
+      label: 'Steps to reproduce'
+      description: 'Please list the steps to reproduce the bug. Better yet, make a video (on loom)!'
+      placeholder: 'Please list steps or link video.'
+      value: |
+        1. Go to ...
+        2. Click on ...
+        3. ...
+        
+        [See video](https://www.loom.com/...)
+    validations:
+      required: true
+  
+  # [textarea] what was expected *
+  - type: textarea
+    id: expectations
+    attributes:
+      label: 'What did you expect or want to have happened?'
+      description: 'Please describe what you expected to have happened. If you have any links to previous discussions or designs, please link them here.'
+      placeholder: 'Please describe your expectations.'
+      value: |
+        The bug shouldn't have happened because...
+    validations:
+      required: true
+  
+  # [textarea] possible solutions *
+  - type: textarea
+    id: solutions
+    attributes:
+      label: 'What do you think is causing this bug? How would you fix it?'
+      description: 'Please describe what you think is causing this bug. If you have any ideas on how to fix it, please describe them here. If you have any links to previous discussions or designs, please link them here.'
+      placeholder: 'Please discuss the bug a little.'
+      value: |
+        ### Cause
+        The bug is probably being caused by... 
+        
+        ### Fix
+        perhaps fix by...'
+    validations:
+      required: true
+ 
+  # [dropdown] severity *
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 'Severity'
+      description: 'How critical would you think this bug is?'
+      options:
+        - 1 (Breaking)
+        - 2 (Not breaking, but important)
+        - 3 (Should fix)
+        - 4 (Nice to have)
+        - 5 (acually, feature request)
+    validations:
+      required: true
+  
+  ## Debugging info ##
+
+  # [dropdown] browser *
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: 'What browsers are you seeing the problem on?'
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+    validations:
+      required: true
+  
+  # [dropdown] machine *
+  - type: dropdown
+    id: machine
+    attributes:
+      label: 'What machine are you seeing the problem on?'
+      description: 'If selection _other_, please specify in the description above.'
+      options:
+        - Apple Silicon
+        - Apple Intel
+        - Windows 11
+        - Windows 10
+        - Linux
+        - Other
+    validations:
+      required: true
+  
+  # [textarea-shell] logs
+  - type: textarea
+    id: logs
+    attributes:
+      label: 'Relevant log output'
+      description: 'Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.'
+      render: shell

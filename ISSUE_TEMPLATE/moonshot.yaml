@@ -1,0 +1,84 @@
+## Created: 2023-06-13 @thisispalash
+## Updated: 2023-06-15 @thisispalash
+
+name: 'Moonshot'
+description: 'Use this template to open a discussion on a possible trajectory or idea. This could be a feature request, or a general observation.'
+title: '[Moonshot]: '
+labels: ['brainstorm', 'help wanted']
+assignees: ['thisispalash']
+body: # * = required
+
+  # [markdown] information
+  - type: markdown
+    attributes:
+      value: |
+        Oh? Do you have an idea that is big? Some observation leading to some insight leading to some connection, leading to here! _How exciting!_
+
+        For clarity, this issue template is to open something that might require _brainstorming_. So, see if your observation or idea fits into one of these first,
+        - [bug] something is broken
+        - [feature] something is missing
+        - [ux] something is confusing or can be delightful
+        - [ui] like ux, but for ui
+        - or [codebase] something that is more internal
+      
+  # [textarea] the what *
+  - type: textarea
+    id: the-what
+    attributes:
+      label: 'Description'
+      description: 'Describe the moonshot! _What_ is this big idea?'
+      placeholder: 'pls sir, reveal your thoughts!'
+    validations:
+      required: true
+  
+  # [textarea] the why *
+  - type: textarea
+    id: the-why
+    attributes:
+      label: 'Moonshot Journey'
+      description: 'Describe how you got to this point. _Why_ do you think this idea is worth pursuing?'
+      placeholder: 'pls sir, reveal your reasoning!'
+    validations:
+      required: true
+
+  # [textarea] the how *
+  - type: textarea
+    id: the-how
+    attributes:
+      label: 'Considerations'
+      description: '_How_ do you think we should address this _opportunity_?'
+      placeholder: 'pls sir, help us!'
+    validations:
+      required: true
+  
+  # [textarea] supporting materials
+  - type: textarea
+    id: support
+    attributes:
+      label: 'Supporting materials'
+      description: 'Attach any supporting materials here. Screenshots, links, etc.'
+      placeholder: 'pls sir, let us see what you see!'
+  
+  # [dropdown] Urgency (lower is more urgent) *
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: 'Urgency'
+      description: 'How critical would you think this feature is? (1 = most urgent)'
+      options:
+        - 0 (the train has left)
+        - 1 (the train is leaving)
+        - 2 (the train is at the station)
+        - 3 (the train is arriving)
+        - 4 (the train is being built)
+        - 5 (the train should be built)
+    validations:
+      required: true
+
+  # [textarea] miscellaneous / open section
+  - type: textarea
+    id: miscellaneous
+    attributes:
+      label: 'Thoughts'
+      description: 'Use this area for any lingering thoughts or comments.'
+      placeholder: 'whatcha thinkin bruv?'

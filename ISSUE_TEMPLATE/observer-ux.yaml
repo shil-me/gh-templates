@@ -1,0 +1,89 @@
+## Created: 2023-06-13 @thisispalash
+## Updated: 2023-06-15 @thisispalash
+
+name: 'Observer UX'
+description: 'Use this template to open an issue about some form of user experience. This could be a bug, a feature request, or a general observation.'
+title: '[UX]: '
+labels: ['ux-plus', 'enhancement']
+assignees: ['trxnt']
+body: # * = required
+
+  # [checkboxes] issue type *
+  - type: checkboxes
+    id: root-reasoning
+    attributes:
+      label: 'Specifically, what in UX?'
+      description: 'This issue is for reporting UX things. Select all that apply. If none apply, maybe some other issue template more appropriate?'
+      options:
+        - label: breaking ux; causing user error or users to leave the site
+          required: false
+        - label: helpful ux; providing useful context to user
+          required: false
+        - label: delightful ux; eliciting a feeling of delight
+          required: false
+        - label: observer ux; something more general, noticed while general development and use of app
+          required: false
+    validations:
+      required: true
+      
+  # [textarea] the what *
+  - type: textarea
+    id: the-what
+    attributes:
+      label: Description
+      description: 'Describe this feature. _What_ do you envision?'
+      placeholder: 'pls sir, reveal your secrets!'
+    validations:
+      required: true
+  
+  # [textarea] the why *
+  - type: textarea
+    id: the-why
+    attributes:
+      label: 'Issue Journey'
+      description: 'Describe how you got to this point. _Why_ do you want this feature?'
+      placeholder: 'pls sir, let us travel the path with you!'
+    validations:
+      required: true
+
+  # [textarea] the how *
+  - type: textarea
+    id: the-how
+    attributes:
+      label: 'Considerations'
+      description: 'How do you envision this feature working? _How_ do you think it should be implemented?'
+      placeholder: 'pls sir, help us!'
+    validations:
+      required: true
+  
+  # [textarea] supporting materials
+  - type: textarea
+    id: support
+    attributes:
+      label: 'Supporting materials'
+      description: 'Attach any supporting materials here. Screenshots, links, etc.'
+      placeholder: 'pls sir, let us see what you see!'
+  
+  # [dropdown] Urgency (lower is more urgent) *
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: 'Urgency'
+      description: 'How critical would you think this feature is? (1 = most urgent)'
+      options:
+        - 0 (needed yesterday)
+        - 1 (ASAP)
+        - 2 (should do soon)
+        - 3 (would be nice to have)
+        - 4 (could be special)
+        - 5 (acually, is a moonshot)
+    validations:
+      required: true
+
+  # [textarea] miscellaneous / open section
+  - type: textarea
+    id: miscellaneous
+    attributes:
+      label: 'Thoughts'
+      description: 'Use this area for any lingering thoughts or comments.'
+      placeholder: 'whatcha thinkin bru?'

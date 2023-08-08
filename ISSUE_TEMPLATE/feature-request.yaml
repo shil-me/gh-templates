@@ -1,0 +1,80 @@
+## Created: 2023-06-13 @thisispalash
+## Updated: 2023-06-15 @thisispalash
+
+name: 'Feature Request'
+description: 'Use this template to request a new feature. Or to start a discussion around one.'
+title: '[Feature]: '
+labels: ['enhancement', 'question']
+assignees: ['']
+body: # * = required
+
+  # [markdown] information
+  - type: markdown
+    attributes:
+      value: |
+        This issue is for requesting new features. Use this form to submit an issue thats not a bug, bigger than a ui or ux issue but smaller than a moonshot.
+
+  # [textarea] description *
+  - type: textarea
+    id: the-what
+    attributes:
+      label: 'Description'
+      description: 'Describe this feature. _What_ do you envision?'
+      placeholder: 'pls sir, reveal your secrets!'
+    validations:
+      required: true
+
+  # [textarea] journey *
+  - type: textarea
+    id: the-why
+    attributes:
+      label: 'Journey to this point'
+      description: |
+        Describe how you got to this point. _Why_ do you want this feature?
+      placeholder: 'pls sir, let us travel the path with you!'
+    validations:
+      required: true
+
+  # [textarea] supporting materials
+  - type: textarea
+    id: support
+    attributes:
+      label: 'Supporting materials'
+      description: 'Attach any supporting materials here. Screenshots, links, etc.'
+      placeholder: 'pls sir, let us see what you see!'
+    validations:
+      required: true
+
+  # [textarea] considerations *
+  - type: textarea
+    id: the-how
+    attributes:
+      label: 'Considerations'
+      description: 'How do you envision this feature working? _How_ do you think it should be implemented?'
+      placeholder: 'pls sir, help us!'
+    validations:
+      required: true
+
+  # [dropdown] urgency *
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: 'Urgency'
+      description: 'How critical would you think this feature is? (1 = most urgent)'
+      options:
+        - 0 (needed yesterday)
+        - 1 (ASAP)
+        - 2 (should do soon)
+        - 3 (would be nice to have)
+        - 4 (could be special)
+        - 5 (acually, is a moonshot)
+    validations:
+      required: true
+
+  # [textarea] miscellaneous / open section
+  - type: textarea
+    id: miscellaneous
+    attributes:
+      label: Thoughts
+      description: 'Use this area for any lingering thoughts or comments.'
+      placeholder: 'whatcha thinkin bru?'
